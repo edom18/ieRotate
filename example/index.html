@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>ieRotate example on jQuery</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="test1">
+    <p>test</p>
+    <p><a href="http://css-eblog.com/">to CSS-EBLOG</a></p>
+</div>
+
+<div id="test2">test2</div>
+<div id="test3">test3</div>
+
+<script src="../src/lib/jquery-1.7.2.min.js"></script>
+<script src="../src/jquery-ierotate.js"></script>
+<script type="text/javascript">
+(function (win, doc) {
+ 
+    $('#test1').ieRotate(10);
+    $('#test2').ieRotate(20);
+    $('#test3').ieRotate(30);
+    $('#test4').ieRotate(40);
+}(window, document));
+</script>
+</body>
+</html>

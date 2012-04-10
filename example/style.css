@@ -1,0 +1,27 @@
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+#test1 {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=1, M21=1, M22=1, sizingMethod='auto expand');
+}
+
+#test1 p {
+    background: yellow;
+}
+#test2 {
+    width: 300px;
+    height: 300px;
+    border: solid 1px red;
+    background: blue;
+    filter: alpha(opacity=20);
+}
+#test3 {
+    width: 200px;
+    height: 200px;
+    background: gray;
+}
