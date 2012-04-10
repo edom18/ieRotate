@@ -15,7 +15,7 @@
     
         var rad = deg * DEG_TO_RAD,
             cos_ta, sin_ta,
-            i = 0, l = 0,
+            i = 0, l = this.length,
             ele, style, filters, filter;
 
         if (angleManager[deg]) {
@@ -27,9 +27,6 @@
             angleManager[deg].cos_ta = cos_ta = cos(rad);
             angleManager[deg].sin_ta = sin_ta = sin(rad);
         }
-
-        rad = deg * DEG_TO_RAD;
-        l = this.length;
 
         //apply to all DOM elements.
         for (; ele = this[i]; i++) {
